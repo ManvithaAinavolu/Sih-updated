@@ -3,6 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { NotificationComponent } from './notification/notification.component';
+import { ParentRegisterComponent } from './parent-register/parent-register.component';
+import { ChildRegisterComponent } from './child-register/child-register.component';
+import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
   {
@@ -20,8 +23,20 @@ const routes: Routes = [
   },{
     path: 'notification',
     component: NotificationComponent
-  }
-  
+  },
+  {
+    path: 'parent-regiser',
+    component:ParentRegisterComponent
+  },
+  {
+    path: 'child-regiser',
+    component:ChildRegisterComponent
+  },
+  {
+    path: 'register',
+    component:RegisterComponent
+  },
+ 
 ];
 
 @NgModule({
